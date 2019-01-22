@@ -10,7 +10,7 @@ python:
 cache: pip
 before_install:
 - 'pip install pipenv'
-- 'pipenv install'
+- 'pipenv install --dev'
 script: 'make ci'
 # after_success:
 #   - 'python-codacy-coverage -r coverage.xml'
