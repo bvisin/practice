@@ -1,4 +1,8 @@
 language: python
+env:
+  global:
+    - PIPENV_VENV_IN_PROJECT=1
+    - PIPENV_IGNORE_VIRTUALENVS=1
 sudo: required
 dist: xenial
 python:
@@ -6,7 +10,7 @@ python:
 cache: pip
 before_install:
 - 'pip install pipenv'
-- 'pipenv sync'
+- 'pipenv install'
 script: 'make ci'
 # after_success:
 #   - 'python-codacy-coverage -r coverage.xml'
