@@ -12,8 +12,3 @@ def sample_func(input_int):
     """
 
     return input_int + 1
-
-def another_not_covered_func():
-    """[summary]
-    """
-    return False

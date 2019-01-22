@@ -123,7 +123,7 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
-#.env <-- Removed 1-25-2018 B.M. for docker-compose
+.env
 .venv
 .local
 env/

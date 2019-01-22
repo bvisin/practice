@@ -12,5 +12,5 @@ before_install:
 - 'pip install pipenv'
 - 'pipenv install --dev'
 script: 'make ci'
-# after_success:
-#   - 'python-codacy-coverage -r coverage.xml'
+after_success:
+  - 'pipenv run python-codacy-coverage -r coverage.xml'
