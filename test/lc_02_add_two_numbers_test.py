@@ -25,6 +25,13 @@ def test_add_two_lists_where_one_is_empty():
     rtn = [0, 1, 2]
     assert add_two_numbers(l1, l2) == rtn
 
+def test_add_two_lists_extra_cary():
+
+    l1 = [9, 9]
+    l2 = [1]
+    rtn = [0, 0, 1]
+    assert add_two_numbers(l1, l2) == rtn
+
 def test_add_two_lists_where_two_is_empty():
 
     l1 = []
