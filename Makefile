@@ -12,7 +12,7 @@ ci: lint test
 .PHONY: commit
 commit:
 	git add .
-	git commit -am working
+	git commit
 
 .PHONY: revert
 revert:
