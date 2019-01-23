@@ -11,4 +11,4 @@ def sample_func(input_int):
         int -- [input value plus one]
     """
 
-    return input_int + 2
+    return input_int + 3
