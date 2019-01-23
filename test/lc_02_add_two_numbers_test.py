@@ -11,6 +11,27 @@ def test_add_two_numbers():
     rtn = [7, 0, 8]
     assert add_two_numbers(l1, l2) == rtn
 
+def test_add_two_lists_of_nonequal_length():
+
+    l1 = [0, 1]
+    l2 = [0, 1, 2]
+    rtn = [0, 2, 2]
+    assert add_two_numbers(l1, l2) == rtn
+
+def test_add_two_lists_where_one_is_empty():
+
+    l1 = [0, 1, 2]
+    l2 = []
+    rtn = [0, 1, 2]
+    assert add_two_numbers(l1, l2) == rtn
+
+def test_add_two_lists_where_two_is_empty():
+
+    l1 = []
+    l2 = [0, 1, 2]
+    rtn = [0, 1, 2]
+    assert add_two_numbers(l1, l2) == rtn
+
 def test_reverse_list_and_combine():
     l1 = [2, 4, 3]
     rtn = 342
