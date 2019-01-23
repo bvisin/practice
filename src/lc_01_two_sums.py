@@ -21,10 +21,11 @@ def two_sums_compliment(nums, target):
     :type target: int
     :rtype: List[int]
     """
-
+    compliments = {}
     for index, num in enumerate(nums):
-        compliment = target - num
-        if compliment in [x for x in nums if x != num]:
-            return [index, nums.index(compliment)]
+        if num in compliments:
+            return [compliments[num], index]
+        else:
+            compliments[target - num] = index
 
     raise Exception("No two sum solution")

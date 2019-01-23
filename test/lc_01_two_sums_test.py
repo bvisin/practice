@@ -40,3 +40,9 @@ class TwoSumsDict(unittest.TestCase):
         target = 6
         assert lc_01_two_sums.two_sums_compliment(nums, target) == [1, 2]
 
+
+    def test_two_sums_expanded(self):
+        nums = [3,3]
+        target = 6
+        assert lc_01_two_sums.two_sums_compliment(nums, target) == [0, 1]
+
