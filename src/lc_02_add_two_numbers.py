@@ -38,6 +38,6 @@ def add_two_numbers(list1, list2):
     Returns:
         [type] -- [description]
     """
-    # sum_lists = reverse_list_and_combine(list1) + reverse_list_and_combine(list2)
+    sum_lists = reverse_list_and_combine(list1) + reverse_list_and_combine(list2)
 
-    return [7, 0, 8]
+    return split_and_reverse_int(sum_lists)
