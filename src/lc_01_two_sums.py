@@ -24,7 +24,7 @@ def two_sums_compliment(nums, target):
 
     for index, num in enumerate(nums):
         compliment = target - num
-        if compliment in nums:
+        if compliment in [x for x in nums if x != num]:
             return [index, nums.index(compliment)]
 
     raise Exception("No two sum solution")
