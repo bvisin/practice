@@ -23,6 +23,7 @@ def two_sums_compliment(nums, target):
     """
     compliments = {}
     for index, num in enumerate(nums):
+        #disable=no-else-return
         if num in compliments:
             return [compliments[num], index]
         else:
