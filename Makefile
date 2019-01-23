@@ -19,7 +19,7 @@ revert:
 	# git reset --hard
 	# git clean -f
 	# The above 2 commands are a bit too harsh as they revert our test cases
-	git checkout HEAD — src/main/
+	git checkout HEAD src/
 
 .PHONY: stash
 stash:
