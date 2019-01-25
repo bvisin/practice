@@ -37,7 +37,7 @@ def add_two_numbers(list1, list2):
         mod = int(added_sum % 10)
         current.next = ListNode(mod)
         current = current.next
-        carry = int(int(added_sum) / 10)
+        carry = int(added_sum / 10)
         primary = (primary.next if primary else None)
         secondary = (secondary.next if secondary else None)
 
