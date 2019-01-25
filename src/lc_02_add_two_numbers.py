@@ -26,8 +26,22 @@ def add_two_numbers(list1, list2):
     Returns:
         [type] -- [description]
     """
-    rtn = ListNode(7)
-    rtn.next = ListNode(0)
-    rtn.next.next = ListNode(8)
+    dummy = ListNode(0)
+    current = dummy
+    primary = list1
+    secondary = list2
+    carry = 0
 
-    return rtn
+    while primary or secondary:
+        added_sum = (primary.val if primary else 0) + (secondary.val if secondary else 0) + carry
+        mod = int(added_sum % 10)
+        current.next = ListNode(mod)
+        current = current.next
+        carry = int(int(added_sum) / 10)
+        primary = (primary.next if primary else None)
+        secondary = (secondary.next if secondary else None)
+
+    if carry > 0:
+        current.next = ListNode(carry)
+
+    return dummy.next

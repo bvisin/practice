@@ -19,45 +19,59 @@ def test_add_two_numbers():
     assert rtn.next.val == 0
     assert rtn.next.next.val == 8
 
-# def test_add_two_lists_of_nonequal_length():
 
-#     l1 = [0, 1]
-#     l2 = [0, 1, 2]
-#     rtn = [0, 2, 2]
-#     l1 = ListNode(0, ListNode(1))
-#     l2 = ListNode(0, ListNode(1, ListNode(2)))
-#     rtn = ListNode(7, ListNode(0, ListNode(8)))
-#     assert add_two_numbers(l1, l2) == rtn
+def test_add_two_numbers_not_equal_length_lists():
 
-# def test_add_two_lists_where_one_is_empty():
+    l1 = ListNode(0)
+    l1.next = ListNode(1)
 
-#     l1 = [0, 1, 2]
-#     l2 = []
-#     rtn = [0, 1, 2]
-#     assert add_two_numbers(l1, l2) == rtn
+    l2 = ListNode(0)
+    l2.next = ListNode(1)
+    l2.next.next = ListNode(2)
 
-# def test_add_two_lists_extra_cary():
+    rtn = add_two_numbers(l1, l2)
 
-#     l1 = [9, 9]
-#     l2 = [1]
-#     rtn = [0, 0, 1]
-#     assert add_two_numbers(l1, l2) == rtn
+    assert rtn.val == 0
+    assert rtn.next.val == 2
+    assert rtn.next.next.val == 2
 
-# def test_add_two_lists_where_two_is_empty():
+def test_add_two_lists_where_two_is_empty():
 
-#     l1 = []
-#     l2 = [0, 1, 2]
-#     rtn = [0, 1, 2]
-#     assert add_two_numbers(l1, l2) == rtn
+    l1 = ListNode(0)
+    l1.next = ListNode(1)
+    l1.next.next = ListNode(2)
 
-# def test_reverse_list_and_combine():
-#     l1 = [2, 4, 3]
-#     rtn = 342
+    l2 = None
 
-#     assert reverse_list_and_combine(l1) == rtn
+    rtn = add_two_numbers(l1, l2)
 
-# def test_split_and_reverse_int():
-#     test_input = 807
-#     test_output = [7,0,8]
+    assert rtn.val == 0
+    assert rtn.next.val == 1
+    assert rtn.next.next.val == 2
 
-#     assert split_and_reverse_int(test_input) == test_output
+def test_add_two_lists_extra_cary():
+
+    l1 = ListNode(9)
+    l1.next = ListNode(9)
+
+    l2 = ListNode(1)
+
+    rtn = add_two_numbers(l1, l2)
+
+    assert rtn.val == 0
+    assert rtn.next.val == 0
+    assert rtn.next.next.val == 1
+
+def test_add_two_lists_where_one_is_empty():
+
+    l1 = None
+
+    l2 = ListNode(1)
+    l2.next = ListNode(1)
+    l2.next.next = ListNode(2)
+
+    rtn = add_two_numbers(l1, l2)
+
+    assert rtn.val == 1
+    assert rtn.next.val == 1
+    assert rtn.next.next.val == 2

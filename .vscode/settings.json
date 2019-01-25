@@ -7,5 +7,6 @@
     ],
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
-    "python.unitTest.pyTestEnabled": true
+    "python.unitTest.pyTestEnabled": true,
+    "python.pythonPath": "/Users/bvisin/.local/share/virtualenvs/roku-main-41kYobcM/bin/python"
 }
