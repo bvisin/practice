@@ -10,4 +10,4 @@ def solution(input_string):
     :rtype: int
     """
 
-    return 3
+    return len(set(input_string))
