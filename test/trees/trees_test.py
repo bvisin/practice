@@ -46,4 +46,21 @@ def test_print_tree(capsys):
     out,err=capsys.readouterr()
     assert out=="2 5 15 30 "
 
+def test_tree(capsys):
+    ary = [10,9,55,25,75,5,30,100]
+    root = Node(50)
+    for x in ary:
+        root.insert(x)
+
+    #         50
+    #     10      55
+    #   9    25       75
+    # 5       30        100
+
+    root.print_tree()
+    out,err=capsys.readouterr()
+    assert out == "5 9 10 25 30 50 55 75 100 "
+
+
+
 
