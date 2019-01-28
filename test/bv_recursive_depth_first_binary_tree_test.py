@@ -5,16 +5,14 @@ from src.trees.node import Node
 
 def test_bfs():
 
-    root_node = Node(1)
-    root_node.insert(2)
-    root_node.insert(3)
-    root_node.insert(4)
-    root_node.insert(5)
-    root_node.insert(6)
-    root_node.insert(7)
-    root_node.insert(8)
-    root_node.insert(9)
+    ary = [10,9,55,25,75,5,60,30,100]
+    root = Node(50)
+    for x in ary:
+        root.insert(x)
+    #         50
+    #     10      55
+    #   9    25      75
+    # 5       30   60   100
 
-
-    tree = Tree()
-    assert tree.dfs(root_node) == [1,2,4,8,9,5,3,6,7]
+    tree = Tree(root)
+    assert tree.generate_list() == [50, 10, 9, 5, 25, 30, 55, 75, 60, 100]

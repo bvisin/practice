@@ -12,14 +12,32 @@ class Tree():
     """
 
 
-    def __init__(self):
-        self.root = None
+    def __init__(self, root_node):
+        self.root_node = root_node
+        self.rtn_list = []
 
-    def dfs(self, root_node):
+    def generate_list(self):
         """[summary]
 
         Returns:
             [type] -- [description]
         """
-        self.root = 1
-        return [1, 2, 4, 8, 9, 5, 3, 6, 7]
+
+        self.dfs(self.root_node)
+        return self.rtn_list
+
+    def dfs(self, node):
+        """[summary]
+
+        Returns:
+            [type] -- [description]
+        """
+        if not node:
+            return
+
+        #preorder search (Data, Left, Right)
+        self.rtn_list.append(node.data)
+        print(node.data)
+
+        self.dfs(node.left)
+        self.dfs(node.right)
