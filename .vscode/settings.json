@@ -1,10 +1,12 @@
 {
-    "python.linting.ignorePatterns": [
-        "test/*.py",
-    ],
+    "python.linting.pylintArgs": [
+        "--rcfile",
+        "${workspaceFolder}\\.pylintrc"
+      ],
     "python.unitTest.pyTestArgs": [
         "test"
     ],
+
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
     "python.unitTest.pyTestEnabled": true,
