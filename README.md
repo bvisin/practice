@@ -5,4 +5,4 @@ Practice problems and my solutions
 
 [![Build Status](https://travis-ci.org/bvisin/practice.svg?branch=master)](https://travis-ci.org/bvisin/practice)
 
-Sample problems are currently being pulled from [leetcode](https://leetcode.com)
+Sample problems are made up by me `bv_{description}.py` or being pulled from [leetcode](https://leetcode.com) `lc_##_{description}.py`
