@@ -6,7 +6,7 @@ def test_node(capsys):
     n = Node(5)
     n.print()
     out,err=capsys.readouterr()
-    assert out=="5\n"
+    assert out=="5 "
 
 def test_insert_node_null():
     n = Node(5)
