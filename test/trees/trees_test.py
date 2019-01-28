@@ -35,3 +35,15 @@ def test_insert_left_node_recursive():
     assert root_node.left.data == 10
     root_node.insert(5)
     assert root_node.left.left.data == 5
+
+def test_print_tree(capsys):
+    root = Node(30)
+    root.insert(5)
+    root.insert(15)
+    root.insert(2)
+
+    root.print_tree()
+    out,err=capsys.readouterr()
+    assert out=="2 5 15 30 "
+
+

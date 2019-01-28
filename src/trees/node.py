@@ -42,3 +42,15 @@ class Node:
         """
 
         print(self.data)
+
+    def print_tree(self):
+        """[summary]
+        """
+
+        if self.left:
+            self.left.print_tree()
+
+        print(self.data, end=' ')
+
+        if self.right:
+            self.right.print_tree()
