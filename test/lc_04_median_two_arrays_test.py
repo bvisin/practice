@@ -6,3 +6,10 @@ def test_solution():
     nums2 = [2]
 
     assert solution(nums1, nums2) == 2.0
+
+def test_solution_two():
+
+    nums1 = [1, 2]
+    nums2 = [3, 4]
+
+    assert solution(nums1, nums2) == 2.5
