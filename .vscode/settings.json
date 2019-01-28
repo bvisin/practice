@@ -1,7 +1,6 @@
 {
-    "python.linting.pylintArgs": [
-        "--rcfile",
-        "${workspaceFolder}\\.pylintrc"
+    "python.linting.ignorePatterns": [
+        "**/test/**/*.py"
       ],
     "python.unitTest.pyTestArgs": [
         "test"
