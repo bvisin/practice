@@ -45,6 +45,7 @@ class Node:
 
     def print_tree(self):
         """[summary]
+        uses in-order traversal (left-root-right)
         """
 
         if self.left:

@@ -29,13 +29,14 @@ class Tree():
     def dfs(self, node):
         """[summary]
 
+        preorder traversal (root-left-right)
+
         Returns:
             [type] -- [description]
         """
         if not node:
             return
 
-        #preorder search (Data, Left, Right)
         self.rtn_list.append(node.data)
         print(node.data)
 
