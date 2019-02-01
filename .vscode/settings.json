@@ -2,12 +2,8 @@
     "python.linting.ignorePatterns": [
         "**/test/**/*.py"
       ],
-    "python.unitTest.pyTestArgs": [
-        "test"
-    ],
-
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
     "python.unitTest.pyTestEnabled": true,
-    "python.pythonPath": "/Users/bvisin/.local/share/virtualenvs/roku-main-41kYobcM/bin/python"
+    "python.pythonPath": "/Users/bvisin/.local/share/virtualenvs/practice-yiNp7Qel/bin/python",
 }
